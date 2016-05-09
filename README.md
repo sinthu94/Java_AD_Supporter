@@ -14,6 +14,8 @@ Just use it like:
  
  + Ripple Sort  
  
+ + Insert Sort  
+ 
  
  At first, you have to create your own comparator with **MyComparator**.
  You can use here any Java-Object you want for the comparison.
