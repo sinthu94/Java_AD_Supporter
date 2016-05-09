@@ -1,7 +1,7 @@
 # Java_Algorithm_Supporter
 Java Algorithms
 
-This API is a small bundle of some basic algorithm 
+This API is a small bundle of some basic algorithm and data structures
 and should help you to use them in your customized situation.
 
 Just use it like:
