@@ -6,6 +6,11 @@ package sinthu94.sort;
 @FunctionalInterface
 public interface MyComparator<T> {
 
+    /**
+     * @param a first object
+     * @param b second object
+     * @return true if a is smaller then b
+     */
     boolean compare(T a, T b);
 
 }
