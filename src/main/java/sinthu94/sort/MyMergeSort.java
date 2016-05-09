@@ -13,7 +13,6 @@ public class MyMergeSort<T> implements MySorter<T>{
     }
 
     private T[] sortIntern(int l, int r) {
-
         if (l < r) {
             int m = (l + r) / 2;
 
@@ -21,7 +20,6 @@ public class MyMergeSort<T> implements MySorter<T>{
             sortIntern(m + 1, r);
             merge(l, m, r);
         }
-
         return array;
     }
 
