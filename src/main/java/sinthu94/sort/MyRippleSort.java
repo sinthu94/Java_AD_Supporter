@@ -15,11 +15,11 @@ public class MyRippleSort<T> implements MySorter<T> {
         boolean switched;
         do {
             switched = false;
-            for (int i = 0; i < array.length-1; i++) {
-                if (!comparator.compare(array[i], array[i+1])) {
+            for (int i = 0; i < array.length - 1; i++) {
+                if (!comparator.compare(array[i], array[i + 1])) {
                     T k = array[i];
-                    array[i] = array[i+1];
-                    array[i+1] = k;
+                    array[i] = array[i + 1];
+                    array[i + 1] = k;
                     switched = true;
                 }
             }

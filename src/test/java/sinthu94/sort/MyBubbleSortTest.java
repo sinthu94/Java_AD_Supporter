@@ -19,7 +19,17 @@ public class MyBubbleSortTest {
     public void setUp() {
         input = new Integer[] {3,2,7,2,-6,-3,1};
         output = new Integer[] {-6,-3,1,2,2,3,7};
-        myComparator = (a, b) -> a <= b;
+        myComparator = new MyComparator<Integer>() {
+            @Override
+            public boolean compare(Integer a, Integer b) {
+                return a <= b;
+            }
+
+            @Override
+            public boolean equals(Integer a, Integer b) {
+                return a.equals(b);
+            }
+        };
         myBubbleSort = new MyBubbleSort<>(myComparator);
     }
 

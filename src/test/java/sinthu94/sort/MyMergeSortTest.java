@@ -19,8 +19,17 @@ public class MyMergeSortTest {
     public void setUp() {
         input = new Integer[] {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         output = new Integer[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        myComparator = (a, b) -> a <= b;
-        myMergeSort = new MyMergeSort<>(myComparator);
+        myComparator = new MyComparator<Integer>() {
+            @Override
+            public boolean compare(Integer a, Integer b) {
+                return a <= b;
+            }
+
+            @Override
+            public boolean equals(Integer a, Integer b) {
+                return a.equals(b);
+            }
+        };        myMergeSort = new MyMergeSort<>(myComparator);
     }
 
     @Test

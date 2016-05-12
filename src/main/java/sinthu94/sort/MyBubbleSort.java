@@ -13,12 +13,12 @@ public class MyBubbleSort<T> implements MySorter<T> {
 
     private T[] sortIntern(T[] array) {
         for (int i = 0; i < array.length - 1; i++) {
-            if (comparator.compare(array[i], array[i+1])) {
+            if (comparator.compare(array[i], array[i + 1])) {
                 continue;
             }
             T k = array[i];
-            array[i] = array[i+1];
-            array[i+1] = k;
+            array[i] = array[i + 1];
+            array[i + 1] = k;
             sortIntern(array);
         }
 

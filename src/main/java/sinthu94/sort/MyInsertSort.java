@@ -14,11 +14,11 @@ public class MyInsertSort<T> implements MySorter<T> {
     private T[] sortIntern(T[] array) {
 
         for (int i = 0; i < array.length; i++) {
-            for (int j = array.length-1; j > 0 ; j--) {
-                if (!comparator.compare(array[j-1], array[j])) {
+            for (int j = array.length - 1; j > 0; j--) {
+                if (!comparator.compare(array[j - 1], array[j])) {
                     T k = array[j];
-                    array[j] = array[j-1];
-                    array[j-1] = k;
+                    array[j] = array[j - 1];
+                    array[j - 1] = k;
                 }
             }
         }

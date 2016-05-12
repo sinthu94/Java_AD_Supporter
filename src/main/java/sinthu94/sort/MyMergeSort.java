@@ -3,7 +3,7 @@ package sinthu94.sort;
 /**
  * Created by sinthu on 08.05.16.
  */
-public class MyMergeSort<T> implements MySorter<T>{
+public class MyMergeSort<T> implements MySorter<T> {
 
     private MyComparator<T> comparator;
     private T[] array;
@@ -33,7 +33,7 @@ public class MyMergeSort<T> implements MySorter<T>{
         }
 
         for (j = m + 1; j <= r; j++) {
-            arr[r+m+1-j] = array[j];
+            arr[r + m + 1 - j] = array[j];
         }
 
         i = l;
@@ -52,6 +52,6 @@ public class MyMergeSort<T> implements MySorter<T>{
 
     public T[] sort(T[] array) {
         this.array = array;
-        return sortIntern(0, array.length-1);
+        return sortIntern(0, array.length - 1);
     }
 }
