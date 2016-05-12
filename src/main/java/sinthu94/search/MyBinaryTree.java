@@ -46,7 +46,7 @@ public class MyBinaryTree<T> {
             }
         }
     }
-    
+
     public Optional<MyNode<T>> find(T toFind) {
         Optional<MyNode<T>> currentNode = Optional.of(root);
         while (!myComparator.equals(currentNode.get().getNode(), toFind)) {
