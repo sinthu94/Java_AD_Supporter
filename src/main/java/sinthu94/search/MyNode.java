@@ -27,7 +27,7 @@ public class MyNode<T> {
     }
 
     public void setLeftChild(MyNode<T> leftChild) {
-        this.leftChild = Optional.of(leftChild);
+        this.leftChild = Optional.ofNullable(leftChild);
     }
 
     public Optional<MyNode<T>> getRightChild() {
@@ -35,6 +35,6 @@ public class MyNode<T> {
     }
 
     public void setRightChild(MyNode<T> rightChild) {
-        this.rightChild = Optional.of(rightChild);
+        this.rightChild = Optional.ofNullable(rightChild);
     }
 }
