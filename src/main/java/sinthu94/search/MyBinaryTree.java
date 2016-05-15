@@ -173,7 +173,11 @@ public class MyBinaryTree<T> {
         return myComparator.equals(a, b);
     }
 
-    public List<MyNode<T>> getNodesInOrder(Optional<MyNode<T>> start) {
+    public List<MyNode<T>> getNodesInOrder(MyNode<T> start) {
+        return getNodesInOrder(Optional.of(start));
+    }
+
+    private List<MyNode<T>> getNodesInOrder(Optional<MyNode<T>> start) {
         List<MyNode<T>> myNodes = new ArrayList<>();
         if (start.isPresent()) {
             myNodes.addAll(getNodesInOrder(start.get().getLeftChild()));
