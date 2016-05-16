@@ -56,12 +56,12 @@ MyBinaryTree<Integer> tree = new MyBinaryTree<>(new MyComparator<Integer>() {
             }
         });
 
-        tree.addNode(new MyNode<>(new Integer(3)));
-        tree.addNode(new MyNode<>(new Integer(7)));
-        tree.addNode(new MyNode<>(new Integer(6)));
-        tree.addNode(new MyNode<>(new Integer(4)));
-        tree.addNode(new MyNode<>(new Integer(1)));
-        tree.addNode(new MyNode<>(new Integer(5)));
+tree.addNode(new MyNode<>(new Integer(3)));
+tree.addNode(new MyNode<>(new Integer(7)));
+tree.addNode(new MyNode<>(new Integer(6)));
+tree.addNode(new MyNode<>(new Integer(4)));
+tree.addNode(new MyNode<>(new Integer(1)));
+tree.addNode(new MyNode<>(new Integer(5)));
 ```
 
 
@@ -70,13 +70,10 @@ MyBinaryTree<Integer> tree = new MyBinaryTree<>(new MyComparator<Integer>() {
 ```java
 MyStack<Integer> stack = new MyStack<>();
 
-        stack.push(new Integer(10));
-
-        stack.pushMultipleItems(new Integer(1), new Integer(2), new Integer(3));
-
-        Optional<Integer> topItem = stack.top();
-        
-        stack.popAll();
+stack.push(new Integer(10));
+stack.pushMultipleItems(new Integer(1), new Integer(2), new Integer(3));
+Optional<Integer> topItem = stack.top();        
+stack.popAll();
 ```
 
 
