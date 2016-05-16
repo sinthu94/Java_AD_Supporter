@@ -1,5 +1,5 @@
-# Java_Algorithm_Supporter
-Java Algorithms
+# Java_AD_Supporter
+Java Algorithm and Datastructures
 
 This API is a small bundle of some basic algorithm + data structures
 and should help you to use them in your customized situation.
