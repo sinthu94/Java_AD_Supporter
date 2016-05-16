@@ -1,4 +1,4 @@
-package sinthu94.search;
+package sinthu94.tree;
 
 import java.util.Optional;
 

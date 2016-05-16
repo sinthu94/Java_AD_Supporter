@@ -1,10 +1,9 @@
-package sinthu94.search;
+package sinthu94.tree;
 
 import org.junit.Before;
 import org.junit.Test;
 import sinthu94.sort.MyComparator;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

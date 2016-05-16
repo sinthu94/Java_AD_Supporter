@@ -1,4 +1,4 @@
-package sinthu94.search;
+package sinthu94.tree;
 
 import sinthu94.sort.MyComparator;
 
