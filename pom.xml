@@ -4,7 +4,7 @@
 
     <groupId>sinthu94</groupId>
     <artifactId>java-algorithm-supporter</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
 
     <scm>
         <url>https://github.com/sinthu94/Java_AD_Supporter</url>
