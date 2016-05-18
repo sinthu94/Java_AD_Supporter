@@ -1,7 +1,8 @@
-package sinthu94.stack;
+package sinthu94.datastructure;
 
 import org.junit.Before;
 import org.junit.Test;
+import sinthu94.datastructure.MyStack;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;

@@ -1,4 +1,4 @@
-package sinthu94.tree;
+package sinthu94.datastructure;
 
 import java.util.Optional;
 

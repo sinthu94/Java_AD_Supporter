@@ -1,4 +1,4 @@
-package sinthu94.stack;
+package sinthu94.datastructure;
 
 import java.util.Arrays;
 import java.util.Optional;

@@ -1,6 +1,6 @@
-package sinthu94.tree;
+package sinthu94.datastructure;
 
-import sinthu94.sort.MyComparator;
+import sinthu94.algorithm.MyComparator;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,7 @@
-package sinthu94.sort;
+package sinthu94.algorithm;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -8,17 +9,17 @@ import static org.junit.Assert.assertArrayEquals;
 /**
  * Created by sinthu on 08.05.16.
  */
-public class MyRippleSortTest {
+public class MyMergeSortTest {
 
     private Integer[] input;
     private Integer[] output;
-    private MyRippleSort<Integer> myRippleSort;
+    private MyMergeSort<Integer> myMergeSort;
     private MyComparator<Integer> myComparator;
 
     @Before
     public void setUp() {
-        input = new Integer[] {3,2,7,2,-6,-3,1};
-        output = new Integer[] {-6,-3,1,2,2,3,7};
+        input = new Integer[] {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        output = new Integer[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         myComparator = new MyComparator<Integer>() {
             @Override
             public boolean compare(Integer a, Integer b) {
@@ -29,12 +30,13 @@ public class MyRippleSortTest {
             public boolean equals(Integer a, Integer b) {
                 return a.equals(b);
             }
-        };        myRippleSort = new MyRippleSort<>(myComparator);
+        };
+        myMergeSort = new MyMergeSort<>(myComparator);
     }
 
     @Test
     public void testSort() {
-        Integer[] result = myRippleSort.sort(input);
+        Integer[] result = myMergeSort.sort(input);
         for (int i = 0; i < input.length; i++) {
             System.out.println(input[i] + " <-> " + output[i]);
         }

@@ -1,8 +1,8 @@
-package sinthu94.tree;
+package sinthu94.datastructure;
 
 import org.junit.Before;
 import org.junit.Test;
-import sinthu94.sort.MyComparator;
+import sinthu94.algorithm.MyComparator;
 
 import java.util.Arrays;
 import java.util.List;

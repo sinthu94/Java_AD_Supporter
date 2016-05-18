@@ -1,4 +1,4 @@
-package sinthu94.sort;
+package sinthu94.algorithm;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -8,17 +8,17 @@ import static org.junit.Assert.assertArrayEquals;
 /**
  * Created by sinthu on 08.05.16.
  */
-public class MyMergeSortTest {
+public class MyBubbleSortTest {
 
     private Integer[] input;
     private Integer[] output;
-    private MyMergeSort<Integer> myMergeSort;
+    private MyBubbleSort<Integer> myBubbleSort;
     private MyComparator<Integer> myComparator;
 
     @Before
     public void setUp() {
-        input = new Integer[] {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        output = new Integer[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        input = new Integer[] {3,2,7,2,-6,-3,1};
+        output = new Integer[] {-6,-3,1,2,2,3,7};
         myComparator = new MyComparator<Integer>() {
             @Override
             public boolean compare(Integer a, Integer b) {
@@ -29,12 +29,13 @@ public class MyMergeSortTest {
             public boolean equals(Integer a, Integer b) {
                 return a.equals(b);
             }
-        };        myMergeSort = new MyMergeSort<>(myComparator);
+        };
+        myBubbleSort = new MyBubbleSort<>(myComparator);
     }
 
     @Test
     public void testSort() {
-        Integer[] result = myMergeSort.sort(input);
+        Integer[] result = myBubbleSort.sort(input);
         for (int i = 0; i < input.length; i++) {
             System.out.println(input[i] + " <-> " + output[i]);
         }

@@ -1,4 +1,4 @@
-package sinthu94.sort;
+package sinthu94.algorithm;
 
 /**
  * Created by sinthu on 08.05.16.
